@@ -10,14 +10,14 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  array [array.length - 1]
+  return array [array.length - 1]
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-return array.lenghth
+return array.length;
 }
 
 
@@ -72,12 +72,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for(var i = 0; i < array.length; i++) 
+  for(var i = 0; i < array.length; i++) {
     if(array[i] === elemento) {
       return true;
 }
+  }
+return false;
 }
-
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
